@@ -82,10 +82,43 @@ body > header > .flexContainer > nav ul {
     justify-content: space-around;
 }
 
+/*Jumbotron*/
 body > #jumbotronSection > #jumbotron{
     width: 910px;
     height: 400px;
 }
+
+/*Sections*/
+body > section:nth-of-type(even){
+    background-color: white;
+}
+
+body > section:nth-of-type(odd){
+    background-color: lightgray;
+}
+
+body > section .flexContainer > div {
+    height: 500px;
+}
+
+body > section > .flexContainer > .imageContainer{
+    width: 60%;
+}
+
+body > section > .flexContainer > .textContainer{
+    width: 40%;
+}
+
+body > section:last-of-type > .flexContainer{
+    height: 900px;
+}
+
+
+
+
+
+
+
 
 /*DEBUG*/
 /*header*/
@@ -93,15 +126,15 @@ body > #jumbotronSection > #jumbotron{
     background-color: lightblue;
 }
 
-.debug .flexContainer{
+.debug header .flexContainer{
     background-color: goldenrod;
 }
 
-.debug .flexContainer > div{
-    border: 2px dashed black;
-}
-
-.debug .flexContainer > nav{
+.debug .flexContainer > div,
+.debug .flexContainer > nav,
+.debug #jumbotron,
+.debug > section:last-of-type > .flexContainer
+{
     border: 2px dashed black;
 }
 
@@ -112,5 +145,17 @@ body > #jumbotronSection > #jumbotron{
 
 .debug #jumbotron{ 
     background-color: violet;
-    border: 2px dashed black;
+}
+
+/*Sections*/
+.debug .imageContainer {
+    background-color: dodgerblue;
+}
+
+.debug .textContainer {
+    background-color: pink;
+}
+
+.debug > section:last-of-type > .flexContainer{
+    background-color:forestgreen
 }
