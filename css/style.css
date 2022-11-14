@@ -113,6 +113,36 @@ body > section:last-of-type > .flexContainer{
     height: 900px;
 }
 
+/*Footer*/
+body > footer{
+    flex-direction: column;
+    padding: 15px;
+}
+
+body > footer .flexContainer:first-child header{
+    width: 30%;
+    height: 580px;
+    background-color:lightcoral;
+}
+
+body > footer hr{
+    margin: 30px 0;
+    width: 1200px;
+}
+
+body > footer .flexContainer:last-child{
+    padding: 20px 0;
+}
+
+body > footer .flexContainer:last-child div {
+    padding: 5px 10px;
+}
+
+body > footer .flexContainer:first-child .linkList{
+    width: calc(70% / 4);
+    height: 580px;
+}
+
 
 
 
@@ -121,7 +151,6 @@ body > section:last-of-type > .flexContainer{
 
 
 /*DEBUG*/
-/*header*/
 .debug header{
     background-color: lightblue;
 }
@@ -133,12 +162,12 @@ body > section:last-of-type > .flexContainer{
 .debug .flexContainer > div,
 .debug .flexContainer > nav,
 .debug #jumbotron,
-.debug > section:last-of-type > .flexContainer
+.debug > section:last-of-type > .flexContainer,
+.debug footer .flexContainer:first-child header
 {
     border: 2px dashed black;
 }
 
-/*jumbotron*/
 .debug #jumbotronSection{
     background-color :darkblue;
 }
@@ -147,7 +176,6 @@ body > section:last-of-type > .flexContainer{
     background-color: violet;
 }
 
-/*Sections*/
 .debug .imageContainer {
     background-color: dodgerblue;
 }
@@ -157,5 +185,26 @@ body > section:last-of-type > .flexContainer{
 }
 
 .debug > section:last-of-type > .flexContainer{
-    background-color:forestgreen
+    background-color:forestgreen;
+}
+
+.debug footer{
+    background-color :#23272a;
+}
+
+.debug footer .flexContainer{
+    background-color: aquamarine;
+}
+
+.debug footer .flexContainer:last-child div {
+    background-color: pink;
+}
+
+.debug footer .flexContainer:first-child header{
+    background-color:lightcoral;
+}
+
+.debug footer .flexContainer:first-child .linkList{
+    background-color:lightseagreen;
+    border: 2px dashed white;
 }
