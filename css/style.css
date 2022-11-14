@@ -19,6 +19,10 @@ body > footer
     align-items: center;
 }
 
+body > section {
+    padding: 50px;
+}
+
 .flexContainer {
     width: 1200px;
     max-width: 1200px;
@@ -78,11 +82,13 @@ body > header > .flexContainer > nav ul {
     justify-content: space-around;
 }
 
-
-
-
+body > #jumbotronSection > #jumbotron{
+    width: 910px;
+    height: 400px;
+}
 
 /*DEBUG*/
+/*header*/
 .debug header{
     background-color: lightblue;
 }
@@ -96,5 +102,15 @@ body > header > .flexContainer > nav ul {
 }
 
 .debug .flexContainer > nav{
+    border: 2px dashed black;
+}
+
+/*jumbotron*/
+.debug #jumbotronSection{
+    background-color :darkblue;
+}
+
+.debug #jumbotron{ 
+    background-color: violet;
     border: 2px dashed black;
 }
