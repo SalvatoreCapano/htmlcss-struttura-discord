@@ -3,8 +3,98 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    font-family: sans-serif;
 }
 
-header{
+/*Regole Generali*/
+body > header,
+body > section,
+body > footer
+{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexContainer {
+    width: 1200px;
+    max-width: 1200px;
     
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Header*/
+body > header {
+    padding: 15px;
+}
+
+body > header *{
+    text-decoration: none;
+    color: black;
+}
+
+body > header > .flexContainer{
+    height: 50px;
+}
+
+body > header > .flexContainer > * {
+    display: flex;
+    align-items: center;
+}
+
+body > header > .flexContainer > div {
+    width: 15%;
+    height: 100%;
+    flex-shrink: 1;
+    padding: 10px;
+}
+
+body > header > .flexContainer > div:nth-of-type(1){
+    justify-content: flex-start;
+}
+
+body > header > .flexContainer > div:nth-of-type(2){
+    justify-content: flex-end;
+}
+
+body > header > .flexContainer > nav {
+    width: 60%;
+    height: 100%;
+    flex-shrink: 2;
+
+    justify-content: center;
+}
+
+body > header > .flexContainer > nav ul {
+    width: 100%;
+    list-style: none;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+/*DEBUG*/
+.debug header{
+    background-color: lightblue;
+}
+
+.debug .flexContainer{
+    background-color: goldenrod;
+}
+
+.debug .flexContainer > div{
+    border: 2px dashed black;
+}
+
+.debug .flexContainer > nav{
+    border: 2px dashed black;
 }
